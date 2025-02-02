@@ -8,11 +8,11 @@ print(99**3*8)
 
 #Exercise 3 : What is the output ?
 
-# 5 < 3 #no output as no output function - this would be False 
-# 3 == 3 #no output as no output function -this would be True  
-# 3 == "3" #no output as no output function - this would be False 
-# "3" > 3 #no output as no output function - this would be a TypeError or False 
-# "Hello" == "hello" #no output as no output function - this would be False  
+# 5 < 3 # False 
+# 3 == 3 # True  
+# 3 == "3" # False 
+# "3" > 3 #TypeError or False 
+# "Hello" == "hello" #False  
 
 #Exercise 4 : Your computer brand
 

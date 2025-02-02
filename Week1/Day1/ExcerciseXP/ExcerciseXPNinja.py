@@ -71,7 +71,7 @@ longest_sentence = ""
 while True:
     user_input = input("Enter the longest sentence you can without using 'A':\n")
 
-    if "A" in user_input:  
+    if "A" in user_input.upper():  
         print("Oops! I see an 'A'. Try again.")
         continue  
 

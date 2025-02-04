@@ -1,0 +1,23 @@
+Data Structure (more complex) - Dictionaries
+
+what is:
+-entry =  a key value pair {key:value}
+
+
+How to:
+-create (syntax) = {key:value}
+-access key = dict_name[key]
+-modify an  entry = dict_name[key] = new_value
+-add new entry = dict_name[new_key] = new_value
+- delete an entry = use 'del' keyword 
+-access all the keys = dict_name.keys()
+-access all the values = dict_name.values()
+-access all keys and value = dict_name.items()
+-method to add one or multiple key values pair: update() 
+
+#Advnace built-in methods and keywords:
+zip() = most converted to an iterable in order to see thje result 
+
+Continue: jump to the net iteration 
+Break: breaks the loop 
+Pass: place holder - does nothing, organize the codee 

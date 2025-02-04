@@ -1,0 +1,10 @@
+Data structure in python are also sequences
+-list: ordered and mutable 
+-tuple: ordered and immutable, at least 2 elements 
+-set: unordered and mutable, no duplicates 
+
+Loops
+-for loops: iterables(sequence), range(), enumerate 
+-while loops: couter (i) , while true 
+
+

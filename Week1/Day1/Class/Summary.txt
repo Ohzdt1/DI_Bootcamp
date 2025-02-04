@@ -1,0 +1,17 @@
+Define the following values 
+
+String: is an object that contains a sequence of characters that are wraped with quotation marks  
+integers: are objecta that includes only whole numbers 
+floats: are numbers that contain decimals points  
+booleans: an object that defines something as true or false 
+
+string meathod: string.upper()
+
+integers, floats: < > == !=
+
+booleans: and, or 
+
+functions:
+print() 
+len()
+input()

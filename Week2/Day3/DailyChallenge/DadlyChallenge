@@ -1,87 +1,87 @@
-# import math
+import math
 
-# class Circle:
-#     def __init__(self, radius=None, diameter=None):
-#         if radius is not None:
-#             self.radius = radius
-#         elif diameter is not None:
-#             self.radius = diameter / 2
-#         else:
-#             raise ValueError("Either radius or diameter must be provided.")
+class Circle:
+    def __init__(self, radius=None, diameter=None):
+        if radius is not None:
+            self.radius = radius
+        elif diameter is not None:
+            self.radius = diameter / 2
+        else:
+            raise ValueError("Either radius or diameter must be provided.")
 
-#     @property
-#     def diameter(self):
-#         return self.radius * 2
+    @property
+    def diameter(self):
+        return self.radius * 2
 
-#     @diameter.setter
-#     def diameter(self, value):
-#         self.radius = value / 2
+    @diameter.setter
+    def diameter(self, value):
+        self.radius = value / 2
 
-#     @property
-#     def area(self):
-#         return math.pi * self.radius ** 2
+    @property
+    def area(self):
+        return math.pi * self.radius ** 2
 
-#     def __str__(self):
-#         return f"Circle(radius={self.radius}, diameter={self.diameter}, area={self.area:.2f})"
+    def __str__(self):
+        return f"Circle(radius={self.radius}, diameter={self.diameter}, area={self.area:.2f})"
 
-#     def __add__(self, other):
-#         if isinstance(other, Circle):
-#             return Circle(radius=self.radius + other.radius)
-#         raise TypeError("Can only add two circles together.")
+    def __add__(self, other):
+        if isinstance(other, Circle):
+            return Circle(radius=self.radius + other.radius)
+        raise TypeError("Can only add two circles together.")
 
-#     def __eq__(self, other):
-#         if isinstance(other, Circle):
-#             return self.radius == other.radius
-#         return False
+    def __eq__(self, other):
+        if isinstance(other, Circle):
+            return self.radius == other.radius
+        return False
 
-#     def __lt__(self, other):
-#         if isinstance(other, Circle):
-#             return self.radius < other.radius
-#         return False
+    def __lt__(self, other):
+        if isinstance(other, Circle):
+            return self.radius < other.radius
+        return False
 
-#     def __le__(self, other):
-#         if isinstance(other, Circle):
-#             return self.radius <= other.radius
-#         return False
+    def __le__(self, other):
+        if isinstance(other, Circle):
+            return self.radius <= other.radius
+        return False
 
-#     def __gt__(self, other):
-#         if isinstance(other, Circle):
-#             return self.radius > other.radius
-#         return False
+    def __gt__(self, other):
+        if isinstance(other, Circle):
+            return self.radius > other.radius
+        return False
 
-#     def __ge__(self, other):
-#         if isinstance(other, Circle):
-#             return self.radius >= other.radius
-#         return False
+    def __ge__(self, other):
+        if isinstance(other, Circle):
+            return self.radius >= other.radius
+        return False
 
-# circle1 = Circle(radius=5)
-# circle2 = Circle(diameter=8)
-# circle3 = circle1 + circle2
+circle1 = Circle(radius=5)
+circle2 = Circle(diameter=8)
+circle3 = circle1 + circle2
 
-# print(circle1)
-# print(circle2)
-# print(circle3)  
+print(circle1)
+print(circle2)
+print(circle3)  
 
-# circles = [circle1, circle2, circle3]
-# circles.sort()
-# print([str(c) for c in circles]) 
+circles = [circle1, circle2, circle3]
+circles.sort()
+print([str(c) for c in circles]) 
 
 
-# import turtle
+import turtle
 
-# def draw_circle(circle, x, y):
-#     t.penup()
-#     t.goto(x, y - circle.radius)  
-#     t.pendown()
-#     t.circle(circle.radius) 
+def draw_circle(circle, x, y):
+    t.penup()
+    t.goto(x, y - circle.radius)  
+    t.pendown()
+    t.circle(circle.radius) 
 
-# t = turtle.Turtle()
-# t.speed(0)
+t = turtle.Turtle()
+t.speed(0)
 
-# sorted_circles = sorted(circles)
-# x_position = -100
-# for c in sorted_circles:
-#     draw_circle(c, x_position, 0)
-#     x_position += c.diameter + 20  
+sorted_circles = sorted(circles)
+x_position = -100
+for c in sorted_circles:
+    draw_circle(c, x_position, 0)
+    x_position += c.diameter + 20  
 
-# turtle.done()
+turtle.done()

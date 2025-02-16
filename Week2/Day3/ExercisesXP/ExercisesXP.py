@@ -105,7 +105,7 @@ def minutes_lived(birthdate_str):
 
     print(f"You have lived for approximately {int(minutes_lived):,} minutes.")
 
-minutes_lived("1988-01-21")
+minutes_lived("1993-12-22")
 
 
 #Exercise 7 : Faker Module

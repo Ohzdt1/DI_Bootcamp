@@ -4,84 +4,79 @@ class Circle:
     def __init__(self, radius=None, diameter=None):
         if radius is not None:
             self.radius = radius
+            self.diameter = 2 * radius
         elif diameter is not None:
+            self.diameter = diameter
             self.radius = diameter / 2
         else:
             raise ValueError("Either radius or diameter must be provided.")
 
-    @property
-    def diameter(self):
-        return self.radius * 2
-
-    @diameter.setter
-    def diameter(self, value):
-        self.radius = value / 2
-
-    @property
     def area(self):
-        return math.pi * self.radius ** 2
+        return math.pi * (self.radius ** 2)
 
     def __str__(self):
-        return f"Circle(radius={self.radius}, diameter={self.diameter}, area={self.area:.2f})"
+        return f"Circle(Radius: {self.radius}, Diameter: {self.diameter}, Area: {self.area():.2f})"
 
     def __add__(self, other):
         if isinstance(other, Circle):
             return Circle(radius=self.radius + other.radius)
-        raise TypeError("Can only add two circles together.")
+        raise TypeError("Can only add another Circle.")
+
+    def __lt__(self, other):
+        if isinstance(other, Circle):
+            return self.radius < other.radius
+        raise TypeError("Can only compare with another Circle.")
 
     def __eq__(self, other):
         if isinstance(other, Circle):
             return self.radius == other.radius
         return False
 
-    def __lt__(self, other):
-        if isinstance(other, Circle):
-            return self.radius < other.radius
-        return False
-
-    def __le__(self, other):
-        if isinstance(other, Circle):
-            return self.radius <= other.radius
-        return False
-
-    def __gt__(self, other):
-        if isinstance(other, Circle):
-            return self.radius > other.radius
-        return False
-
-    def __ge__(self, other):
-        if isinstance(other, Circle):
-            return self.radius >= other.radius
-        return False
-
+# Example Usage
 circle1 = Circle(radius=5)
-circle2 = Circle(diameter=8)
-circle3 = circle1 + circle2
+circle2 = Circle(diameter=12)
+circle3 = Circle(radius=7)
 
-print(circle1)
-print(circle2)
-print(circle3)  
+print(circle1)  # Circle(Radius: 5, Diameter: 10, Area: 78.54)
+print(circle2)  # Circle(Radius: 6.0, Diameter: 12, Area: 113.10)
 
+# Adding circles
+new_circle = circle1 + circle3
+print(new_circle)  # Circle(Radius: 12, Diameter: 24, Area: 452.39)
+
+# Comparison
+print(circle1 < circle2)  # True (5 < 6)
+print(circle1 == circle3)  # False (5 != 7)
+
+# Sorting circles
 circles = [circle1, circle2, circle3]
-circles.sort()
-print([str(c) for c in circles]) 
+circles.sort()  # Sorts by radius
+print([str(c) for c in circles])
 
+
+
+
+# Bonus
 
 import turtle
 
 def draw_circle(circle, x, y):
     t.penup()
-    t.goto(x, y - circle.radius)  
+    t.goto(x, y - circle.radius)  # Move to starting position
     t.pendown()
-    t.circle(circle.radius) 
+    t.circle(circle.radius)  # Draw circle
 
+# Initialize turtle
 t = turtle.Turtle()
 t.speed(0)
 
-sorted_circles = sorted(circles)
-x_position = -100
-for c in sorted_circles:
-    draw_circle(c, x_position, 0)
-    x_position += c.diameter + 20  
+# Sort circles
+circles.sort()
+
+# Draw each circle with spacing
+x_start = -200
+for c in circles:
+    draw_circle(c, x_start, 0)
+    x_start += c.diameter + 20  # Space out circles
 
 turtle.done()

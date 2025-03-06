@@ -1,0 +1,138 @@
+🌟 Exercise 1 : Defining the Problem and Data Collection for Loan Default Prediction
+
+ Problem Statement:
+ The goal of this project is to develop a predictive model that can assess the likelihood of a borrower defaulting on a loan (not paying bacvk). By analyzing various factors related to the applicant's financial history, personal details, and loan attributes, we aim to identify patterns that indicate potential risk. This will help financial institutions make better lending decisions, reduce losses, and improve overall risk management.
+
+ Data Collection Plan:
+
+ 1. Types of Data Needed:
+    - Personal Information: Name, Age, employment status, income level, marital status.
+    - Credit History: Credit score (if applicable in the coutry your in), past loan performance, number of credit accounts.
+    - Loan Details: Loan amount, interest rate, loan term, type of loan.
+    - Repayment History: On-time payments, missed payments, outstanding balance.
+    - Financial Behavior: Savings account balance, spending patterns, debt-to-income ratio.
+
+ 2. Data Sources:
+    - Financial Institutions: Internal loan records, repayment history, and customer profiles.
+    - Credit Bureaus: Credit scores, credit report history.
+    - Government Databases: Income tax records, employment records.
+    - Banking Data: Transaction history, account balances.
+
+ This collected data will be processed, cleaned, and analyzed to build an accurate loan default prediction model.
+
+
+🌟 Exercise 2 : Feature Selection and Model Choice for Loan Default Prediction
+
+Most Relevant Features:
+Based on the dataset, I think that the following features are likely to be the most important for predicting loan defaults:
+ - ApplicantIncome – Higher income may indicate a better ability to repay the loan.
+ - CoapplicantIncome – Combined household income can impact the likelihood of repayment.
+ - LoanAmount – Larger loans might have higher default risk if not proportional to overall income.
+ - Loan_Amount_Term – Shorter or longer loan terms can affect repayment capacity and add a level of risk.
+ - Credit_History – A strong credit history is a key indicator of repayment behavior.
+ - Dependents – More dependents might impact financial responsibilities and repayment ability.
+ - Married – Marital affects financial stability and income distribution.
+ - Self_Employed – Self-employed applicants might have irregular income streams so a closer look is warranted.
+ - Education – Education level can influence earning potential and financial stability.
+ - Property_Area – Urban, semi-urban, and rural areas might have different risks.
+
+Justification for Column Selection:
+ - Financial factors like income, loan amount, and credit history directly impact an applicant’s ability to repay.
+ - Demographic factors like education, dependents, and marital status may influence financial stability.
+ - Loan details like loan term and loan amount are crucial in assessing affordability.
+ - Property location may indicate economic conditions that affect loan repayment.
+
+
+🌟 Exercise 3 : Training, Evaluating, and Optimizing the Model
+
+Model Selection for Loan Default Prediction
+For predicting loan defaults, the following models are commonly used:
+
+Logistic Regression – Best for binary classification (default vs. non-default) with interpretable results.
+Neural Networks – Can model complex patterns but would only use if I have a lot of reliable data.
+
+Evaluation Metrics:
+To assess the performance of the model, the following metrics will be used:
+Accuracy – Measures the percentage of correctly classified instances.
+Precision – Focuses on how many predicted defaults were actual defaults.
+Recall (Sensitivity) – Measures how well the model identifies actual defaulter.
+F1 Score – Balances precision and recal for better overall performance.
+
+Steps for Model Evaluation & Optimization:
+-Data Preprocessing:
+Handle missing values.
+Normalize/standardize numerical variables.
+general data cleaning and gathering 
+Encode categorical variables.
+-Splitting Data:
+Divide dataset into training (80%) and testing (20%) sets or training (60%) and testing (20%) sets.
+-Model Training:
+Train multiple models and compare their performance.
+-Evaluation on Test Data:
+Compute accuracy, precision, recall, and F1 score.
+-Optimization:
+find and add more features to improve model accuracy.
+Address imbalanced data like oversampling or undersampling.
+
+
+🌟 Exercise 4 : Designing Machine Learning Solutions for Specific Problems
+
+-Predicting Stock Prices : predict future prices 
+    Supervised Learning (Regression)- if you have structured historical data and your model if for over time  
+    Unsupervised Learning (Regression)- if you dont have structured data probably for short to long term  
+
+-Organizing a Library of Books : group books into genres or categories based on similarities.
+    Supervised Learning (classification) - because we have lables in the form of genres and categories  
+
+-Program a robot to navigate and find the shortest path in a maze – 
+    Reinforcement Learning (Dimentionality Reduction)- The robot learns optimal paths using trial error with a reward punishment system
+
+
+🌟 Exercise 5 : Designing an Evaluation Strategy for Different ML Models
+
+Evaluation Strategy for Different ML Models
+1. Supervised Learning: Classification Model (e.g., Logistic Regression for Loan Default Prediction)
+Evaluation Metrics:
+
+Accuracy – Measures overall correctness but can be misleading if classes are imbalanced.
+Precision & Recall – Precision ensures fewer false positives, while recall focuses on detecting actual defaulters.
+F1-Score – Balances precision and recall for a more robust evaluation.
+ROC-AUC Curve – Assesses the model’s ability to distinguish between classes.
+Evaluation Methods:
+
+Cross-Validation (K-Fold) – Ensures performance consistency across different data splits.
+Confusion Matrix – Provides insight into false positives/negatives.
+Challenges:
+
+Imbalanced data may require resampling techniques.
+Overfitting can lead to poor generalization.
+2. Unsupervised Learning: Clustering Model (e.g., K-Means for Grouping Books by Genre)
+Evaluation Metrics:
+
+Silhouette Score – Measures how well clusters are separated.
+Elbow Method – Determines the optimal number of clusters by analyzing variance.
+Dunn Index – Assesses the compactness and separation of clusters.
+Evaluation Methods:
+
+Manual Inspection – Checking cluster coherence using domain knowledge.
+Inertia (Sum of Squared Errors) – Measures how well points are assigned to clusters.
+Challenges:
+
+No direct ground truth for validation.
+High-dimensional data can lead to misleading clustering.
+3. Reinforcement Learning: Robot Navigating a Maze (e.g., Q-Learning)
+Evaluation Metrics:
+
+Cumulative Reward – Measures total rewards collected during training.
+Convergence Rate – Evaluates how quickly the model reaches optimal behavior.
+Exploration vs. Exploitation Balance – Ensures sufficient learning without getting stuck in suboptimal strategies.
+Evaluation Methods:
+
+Training Episode Analysis – Tracks reward progression over time.
+Policy Visualization – Observes the learned navigation paths.
+Challenges:
+
+Training can be time-consuming.
+Poor exploration strategies can lead to suboptimal policies.
+
+

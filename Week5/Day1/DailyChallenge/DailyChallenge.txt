@@ -1,0 +1,39 @@
+Machine Learning Overview
+
+What is Machine Learning and Why is it Important?
+
+Machine Learning is a subset of artificial intelligence that enables computers to learn from data and make predictions or decisions without being explicitly programmed. It is crucial for data analysts because it helps automate pattern recognition, improves decision-making, and enhances efficiency in various industries.
+
+Applications of Machine Learning are extreamly varied and can be found across most sectors in our world some examples are:
+ - Finance – Fraud detection and credit risk assessment.
+ - Healthcare – Disease prediction and medical imaging analysis.
+ - Retail – Customer behavior analysis and recommendation systems.
+
+Types of Machine Learning
+1. Supervised Learning
+Definition: The model is trained using labeled data, meaning the input comes with corresponding outputs.
+Example: Predicting whether a loan applicant will default based on income, credit score, and previous repayment history.
+
+2. Unsupervised Learning
+Definition: The model learns from data without explicit labels and tries to identify patterns or groups.
+Example: Clustering customers based on purchasing behavior to target marketing campaigns.
+
+3. Reinforcement Learning
+Definition: The model learns through trial and error by receiving rewards or penalties based on its actions.
+Example: An NPC in a game set to learn a route or petrol to detect players and guard a specific location.
+
+Developing a Machine Learning Model
+1. Feature Selection
+Identify the most relevant variables (features) that influence predictions.
+Example: In loan prediction, income, credit history, and loan amount might be crucial.
+
+2. Model Selection
+Choose the best machine learning algorithm based on the problem.
+Example: Regression for binary classification (like Yes or No) or Classification for finding complex/unknow relationships in unlabled data.
+
+3. Model Evaluation
+Assess the model’s performance using metrics like accuracy, precision, recall, and F1-score.
+Methods such as cross-validation, confusion matrix, and ROC-AUC score help determine effectiveness.
+
+Conclusion
+Machine Learning plays a crucial role in data analytics and decision-making. Understanding its types and the modeling process is essential for developing accurate and effective predictive models.

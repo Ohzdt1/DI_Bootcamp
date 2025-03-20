@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aa461c122a8e0099ce49e32fcd5c27fc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_aa461c122a8e0099ce49e32fcd5c27fc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_aa461c122a8e0099ce49e32fcd5c27fc = L.map(
+                "map_aa461c122a8e0099ce49e32fcd5c27fc",
+                {
+                    center: [37.0902, -95.7129],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_68f9fa49292144f2f6e135d884b3fa8c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_68f9fa49292144f2f6e135d884b3fa8c.addTo(map_aa461c122a8e0099ce49e32fcd5c27fc);
+        
+    
+            var marker_b4f0a1240faa788cb513c1327b83e266 = L.marker(
+                [36.7783, -119.4179],
+                {
+}
+            ).addTo(map_aa461c122a8e0099ce49e32fcd5c27fc);
+        
+    
+            var icon_5d7edf18e634d920972bea9b49bbd26b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2986775e46185edd0999198235146d27 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25a068ff9650d9056a5093410d107945 = $(`<div id="html_25a068ff9650d9056a5093410d107945" style="width: 100.0%; height: 100.0%;">State: California<br>Sales: $457687.63</div>`)[0];
+                popup_2986775e46185edd0999198235146d27.setContent(html_25a068ff9650d9056a5093410d107945);
+            
+        
+
+        marker_b4f0a1240faa788cb513c1327b83e266.bindPopup(popup_2986775e46185edd0999198235146d27)
+        ;
+
+        
+    
+    
+                marker_b4f0a1240faa788cb513c1327b83e266.setIcon(icon_5d7edf18e634d920972bea9b49bbd26b);
+            
+    
+            var marker_125178012c1db7ee45dce170c9d879ce = L.marker(
+                [27.9944024, -81.7602544],
+                {
+}
+            ).addTo(map_aa461c122a8e0099ce49e32fcd5c27fc);
+        
+    
+            var icon_2111e2406cb32078dacc1b85767359b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5a74e361348a41a218ef294ef784b40 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ff84abacb5135d0761bca9209a1ccf7 = $(`<div id="html_9ff84abacb5135d0761bca9209a1ccf7" style="width: 100.0%; height: 100.0%;">State: Florida<br>Sales: $89473.71</div>`)[0];
+                popup_f5a74e361348a41a218ef294ef784b40.setContent(html_9ff84abacb5135d0761bca9209a1ccf7);
+            
+        
+
+        marker_125178012c1db7ee45dce170c9d879ce.bindPopup(popup_f5a74e361348a41a218ef294ef784b40)
+        ;
+
+        
+    
+    
+                marker_125178012c1db7ee45dce170c9d879ce.setIcon(icon_2111e2406cb32078dacc1b85767359b9);
+            
+    
+            var marker_323d6ba92bfc70fd4ad871ec85d93f4f = L.marker(
+                [40.7128, -74.006],
+                {
+}
+            ).addTo(map_aa461c122a8e0099ce49e32fcd5c27fc);
+        
+    
+            var icon_1a7d5bc3073c9d0de8508c95b91d4ac0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4195bf8443cf6c3d9968c0142e61419 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0285ac526b6201c2299137242337d2cb = $(`<div id="html_0285ac526b6201c2299137242337d2cb" style="width: 100.0%; height: 100.0%;">State: New York<br>Sales: $310876.27</div>`)[0];
+                popup_c4195bf8443cf6c3d9968c0142e61419.setContent(html_0285ac526b6201c2299137242337d2cb);
+            
+        
+
+        marker_323d6ba92bfc70fd4ad871ec85d93f4f.bindPopup(popup_c4195bf8443cf6c3d9968c0142e61419)
+        ;
+
+        
+    
+    
+                marker_323d6ba92bfc70fd4ad871ec85d93f4f.setIcon(icon_1a7d5bc3073c9d0de8508c95b91d4ac0);
+            
+    
+            var marker_63bae0d0f595e9ea537c5ac804fbf710 = L.marker(
+                [31.9686, -99.9018],
+                {
+}
+            ).addTo(map_aa461c122a8e0099ce49e32fcd5c27fc);
+        
+    
+            var icon_be9a6d8491dffe5a9e6edfafb196ffc5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_be7d0aa53bc1f034071dfb92c2c8ce0c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab191ec61297502dd1382f8c0edb135f = $(`<div id="html_ab191ec61297502dd1382f8c0edb135f" style="width: 100.0%; height: 100.0%;">State: Texas<br>Sales: $170188.05</div>`)[0];
+                popup_be7d0aa53bc1f034071dfb92c2c8ce0c.setContent(html_ab191ec61297502dd1382f8c0edb135f);
+            
+        
+
+        marker_63bae0d0f595e9ea537c5ac804fbf710.bindPopup(popup_be7d0aa53bc1f034071dfb92c2c8ce0c)
+        ;
+
+        
+    
+    
+                marker_63bae0d0f595e9ea537c5ac804fbf710.setIcon(icon_be9a6d8491dffe5a9e6edfafb196ffc5);
+            
+</script>
+</html>
